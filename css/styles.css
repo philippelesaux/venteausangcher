@@ -10,6 +10,7 @@ p, div {
 }
 p {
     text-indent: 1em;
+    text-align: justify;
 }
 section {
     padding-bottom: 4em;
@@ -92,6 +93,7 @@ a.split {
 .jumbotron p {
     font-family: 'Julius Sans One', sans-serif;
     color: #ff9191;
+    text-align: center;
 }
 .jumbotron time {
     display: inline-block;
