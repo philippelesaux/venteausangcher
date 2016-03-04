@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Julius Sans One', sans-serif;
-    color: #e90101;
+    color: #9E0000;
 }
 p, div {
     font-family: 'Roboto', sans-serif;
@@ -20,7 +20,7 @@ section h2 {
     text-align: center;
 }
 section .glyphicon-tint {
-    color: #e90101;
+    color: #9E0000;
     display: block;
     width: 1em;
     margin: 0 auto 1em;
@@ -49,7 +49,7 @@ a.split {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     background-color: white;
-    color: #e90101;
+    color: #9E0000;
 }
 /* Removes border from open hamburger */
 .navbar-default .navbar-collapse,
@@ -66,13 +66,13 @@ a.split {
 }
 .background-color {
     /* can be treated like a fallback */
-    background-color: #e90101;
+    background-color: #9E0000;
 
     /* will be "on top", if browser supports it */
     background-image: linear-gradient(45deg, #780000, #ff6666);
 
     /* these will reset other properties, like background-position, but it does know what you mean */
-    background: #e90101;
+    background: #9E0000;
     background: linear-gradient(45deg, #780000, #ff6666);
 }
 .jumbotron {
@@ -104,7 +104,7 @@ a.split {
     margin: 1em;
     padding: 2px;
     background-color: white;
-    border: 2px solid #e90101;
+    border: 2px solid #9E0000;
 }
 .panel {
     background-color: #ff4545;
