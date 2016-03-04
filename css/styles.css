@@ -1,0 +1,124 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #e90101;
+}
+p, div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #555;
+}
+p {
+    text-indent: 1em;
+}
+section {
+    padding-bottom: 4em;
+    border-bottom: 1px solid #eee;
+}
+section h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+section .glyphicon-tint {
+    color: #e90101;
+    display: block;
+    width: 1em;
+    margin: 0 auto 1em;
+}
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 4em 0;
+}
+a.split {
+    display: block;
+    margin: 0 0 2em;
+}
+/* Removes default colors in navbar */
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+/* Link highlight color in navbar */
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: white;
+    color: #e90101;
+}
+/* Removes border from open hamburger */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+.navbar-brand img {
+    position: fixed;
+    z-index: 100;
+}
+/* Moves text in expanded hamburger to right */
+.nav>li {
+    text-align: right;
+}
+.background-color {
+    /* can be treated like a fallback */
+    background-color: #e90101;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(45deg, #780000, #ff6666);
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #e90101;
+    background: linear-gradient(45deg, #780000, #ff6666);
+}
+.jumbotron {
+    background-color: transparent;
+
+    color: white;
+    text-align: center;
+}
+.jumbotron h1 {
+    color: white;
+}
+.jumbotron h1 small {
+    color: #ff9191;
+}
+.jumbotron p {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #ff9191;
+}
+.jumbotron time {
+    display: inline-block;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size:  1.25em;
+    padding: 0.5em;
+    border: 2px solid white;
+}
+.bio img {
+    float: left;
+    margin: 1em;
+    padding: 2px;
+    background-color: white;
+    border: 2px solid #e90101;
+}
+.panel {
+    background-color: #ff4545;
+    border: none;
+}
+.panel p {
+    color: white;
+    text-align: center;
+}
+.panel-body li,
+.panel-heading h4 {
+    color: white;
+}
+.panel-heading p {
+    text-align: left;
+    text-indent: 1em;
+}
