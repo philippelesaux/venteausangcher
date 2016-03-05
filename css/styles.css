@@ -31,6 +31,9 @@ footer {
     text-align: center;
     padding: 4em 0;
 }
+footer p {
+    text-align: center;
+}
 a.split {
     display: block;
     margin: 0 0 2em;
@@ -132,4 +135,18 @@ a.split {
 .panel-heading p {
     text-align: left;
     text-indent: 1em;
+}
+.social-links {
+    margin-bottom: 2em;
+}
+.social-links a {
+    color: #555;
+}
+.social-links a:hover {
+    color: #9E0000;
+    cursor: pointer;
+}
+.social-links i {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
