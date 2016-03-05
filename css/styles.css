@@ -26,6 +26,9 @@ section .glyphicon-tint {
     width: 1em;
     margin: 0 auto 1em;
 }
+form {
+    margin-top: 2em;
+}
 footer {
     background-color: #f8f8f8;
     text-align: center;
@@ -36,7 +39,7 @@ footer p {
 }
 a.split {
     display: block;
-    margin: 0 0 2em;
+    margin: 0 0 5em;
 }
 /* Removes default colors in navbar */
 .navbar-default {
@@ -128,13 +131,40 @@ a.split {
     color: white;
     text-align: center;
 }
+#panel-3 {
+    background-color: #9E0000;
+}
+#panel-2 {
+    background-color: #FA0808;
+}
+#panel-1 {
+    background-color: #ff4545;
+}
 .panel-body li,
-.panel-heading h4 {
+.panel-heading h4,
+.panel-heading h5 {
     color: white;
 }
+.panel-heading h5 {
+    text-align: center;
+}
 .panel-heading p {
-    text-align: left;
+    text-align: center;
     text-indent: 1em;
+}
+.panel-body a {
+    color: white;
+}
+.panel-group {
+    margin: 2em 0;
+}
+.btn-default:hover {
+    color: white;
+    background-color: #9E0000;
+    border-color: #9E0000;
+}
+.contact a p {
+    text-align: center;
 }
 .social-links {
     margin-bottom: 2em;
