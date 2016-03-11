@@ -15,16 +15,14 @@ p {
 section {
   padding-bottom: 4em;
   border-bottom: 1px solid #eee; }
-
-section h2 {
-  margin-bottom: 1em;
-  text-align: center; }
-
-section .glyphicon-tint {
-  color: #9E0000;
-  display: block;
-  width: 1em;
-  margin: 0 auto 1em; }
+  section h2 {
+    margin-bottom: 1em;
+    text-align: center; }
+  section .glyphicon-tint {
+    color: #9E0000;
+    display: block;
+    width: 1em;
+    margin: 0 auto 1em; }
 
 form {
   margin-top: 2em; }
@@ -33,9 +31,8 @@ footer {
   background-color: #f8f8f8;
   text-align: center;
   padding: 4em 0; }
-
-footer p {
-  text-align: center; }
+  footer p {
+    text-align: center; }
 
 a.split {
   display: block;
@@ -44,24 +41,21 @@ a.split {
 /* Removes default colors in navbar */
 .navbar-default {
   background-color: transparent;
-  border: none; }
-
-/* Link highlight color in navbar */
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 14px; }
-
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-  background-color: white;
-  color: #9E0000; }
-
-/* Removes border from open hamburger */
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border: none; }
+  border: none;
+  /* Link highlight color in navbar */
+  /* Removes border from open hamburger */ }
+  .navbar-default .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px; }
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: white;
+    color: #9E0000; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none; }
 
 .navbar-brand img {
   position: fixed;
