@@ -79,25 +79,21 @@ a.split {
   color: white;
   text-align: center;
   padding: 5em 0 7em; }
-
-.jumbotron h1 {
-  color: white; }
-
-.jumbotron h1 small {
-  color: #ff9191; }
-
-.jumbotron p {
-  font-family: 'Julius Sans One', sans-serif;
-  color: #ff9191;
-  text-align: center; }
-
-.jumbotron time {
-  display: inline-block;
-  color: white;
-  letter-spacing: 0.1em;
-  font-size: 1.25em;
-  padding: 0.5em;
-  border: 2px solid white; }
+  .jumbotron h1 {
+    color: white; }
+    .jumbotron h1 small {
+      color: #ff9191; }
+  .jumbotron p {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #ff9191;
+    text-align: center; }
+  .jumbotron time {
+    display: inline-block;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    padding: 0.5em;
+    border: 2px solid white; }
 
 .bio img {
   float: left;
