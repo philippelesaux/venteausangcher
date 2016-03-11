@@ -109,6 +109,14 @@ a.split {
         border: 2px solid white;
     }
 }
+.location {
+    &::before {
+        content: "\2014\00a0";
+    }
+    &::after {
+        content: "\00a0\2014";
+    }
+}
 .bio img {
     float: left;
     margin: 1em;
@@ -116,11 +124,11 @@ a.split {
     background-color: white;
     border: 2px solid $primary-color;
 }
-.container a,
-.container a p {
+a,
+a p {
     color: $primary-color;
 }
-.container a:hover {
+a:hover {
     color: $primary-color;
 }
 .panel {
@@ -135,10 +143,10 @@ a.split {
     background-color: $primary-color;
 }
 #panel-2 {
-    background-color: #FA0808;
+    background-color: transparentize($primary-color, .2);
 }
 #panel-1 {
-    background-color: #ff4545;
+    background-color: transparentize($primary-color, .4);
 }
 .panel-body li,
 .panel-heading h4,

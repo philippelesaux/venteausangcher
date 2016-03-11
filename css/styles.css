@@ -95,6 +95,11 @@ a.split {
     padding: 0.5em;
     border: 2px solid white; }
 
+.location::before {
+  content: "\2014\00a0"; }
+.location::after {
+  content: "\00a0\2014"; }
+
 .bio img {
   float: left;
   margin: 1em;
@@ -102,11 +107,11 @@ a.split {
   background-color: white;
   border: 2px solid #9E0000; }
 
-.container a,
-.container a p {
+a,
+a p {
   color: #9E0000; }
 
-.container a:hover {
+a:hover {
   color: #9E0000; }
 
 .panel {
@@ -121,10 +126,10 @@ a.split {
   background-color: #9E0000; }
 
 #panel-2 {
-  background-color: #FA0808; }
+  background-color: rgba(158, 0, 0, 0.8); }
 
 #panel-1 {
-  background-color: #ff4545; }
+  background-color: rgba(158, 0, 0, 0.6); }
 
 .panel-body li,
 .panel-heading h4,
