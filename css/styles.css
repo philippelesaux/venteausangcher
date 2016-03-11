@@ -150,7 +150,7 @@ a.split {
   background-color: #9E0000;
   border-color: #9E0000; }
 
-.contact a p {
+.contact p {
   text-align: center; }
 
 .social-links {
@@ -161,7 +161,9 @@ a.split {
     color: #9E0000;
     cursor: pointer; }
   .social-links i {
-    margin-left: 0.25em;
-    margin-right: 0.25em; }
+    margin: 0.25em; }
+
+.pad-right {
+  padding-right: 1em; }
 
 /*# sourceMappingURL=styles.css.map */

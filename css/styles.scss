@@ -176,8 +176,10 @@ a.split {
     background-color: $primary-color;
     border-color: $primary-color;
 }
-.contact a p {
-    text-align: center;
+.contact {
+    p {
+        text-align: center;
+    }
 }
 .social-links {
     margin-bottom: 2em;
@@ -189,7 +191,9 @@ a.split {
         cursor: pointer;
     }
     i {
-        margin-left: 0.25em;
-        margin-right: 0.25em;
+        margin: 0.25em;
     }
+}
+.pad-right {
+    padding-right: 1em;
 }
