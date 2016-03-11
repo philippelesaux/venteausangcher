@@ -150,6 +150,21 @@ a.split {
   background-color: #9E0000;
   border-color: #9E0000; }
 
+.thumbnail {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid transparent; }
+  .thumbnail p {
+    text-align: center;
+    font-size: 14px; }
+
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover {
+  border-color: #9E0000;
+  cursor: pointer;
+  text-decoration: none; }
+
 .contact p {
   text-align: center; }
 
@@ -165,5 +180,11 @@ a.split {
 
 .pad-right {
   padding-right: 1em; }
+
+.pad-vertical {
+  margin: 2em 0; }
+
+.center-text {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

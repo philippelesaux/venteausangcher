@@ -4,6 +4,8 @@ $secondary-color: #555;
 $heading-font: 'Julius Sans One', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
+$small-text: 14px;
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
     color: $primary-color;
@@ -176,6 +178,22 @@ a.split {
     background-color: $primary-color;
     border-color: $primary-color;
 }
+.thumbnail {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid transparent;
+    p {
+        text-align: center;
+        font-size: $small-text;
+    }
+}
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover {
+    border-color: $primary-color;
+    cursor: pointer;
+    text-decoration: none;
+}
 .contact {
     p {
         text-align: center;
@@ -196,4 +214,10 @@ a.split {
 }
 .pad-right {
     padding-right: 1em;
+}
+.pad-vertical {
+    margin: 2em 0;
+}
+.center-text {
+    text-align: center;
 }
