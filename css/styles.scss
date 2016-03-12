@@ -78,6 +78,16 @@ a.split {
     .navbar-form {
         border: none;
     }
+    .navbar-toggle {
+        border-color: white;
+        &:focus,
+        &:hover {
+            background-color: transparent;
+        }
+        .icon-bar {
+            background-color: white;
+        }
+    }
 }
 .navbar-brand img {
     position: fixed;
@@ -131,12 +141,25 @@ a.split {
         content: "\00a0\2014";
     }
 }
-.bio img {
+.image {
     float: left;
     margin: 1em;
     padding: 2px;
     background-color: white;
+    background-image: url("../img/bios.png");
     border: 2px solid $primary-color;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+}
+.laurette {
+    background-position: 0px 0px;
+}
+.pierre {
+    background-position: 0px -126px;
+}
+.philippe {
+    background-position: 0px -252px;
 }
 .panel {
     background-color: $primary-color;
@@ -170,9 +193,6 @@ a.split {
         color: white;
     }
 }
-.panel-group {
-    margin: 2em 0;
-}
 .btn-default:hover {
     color: white;
     background-color: $primary-color;
@@ -184,7 +204,6 @@ a.split {
     border: 1px solid transparent;
     p {
         text-align: center;
-        font-size: $small-text;
     }
 }
 a.thumbnail.active,
