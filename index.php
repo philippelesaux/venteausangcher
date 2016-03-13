@@ -1,3 +1,4 @@
+<?php include('php/contact.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -38,6 +39,7 @@
                             <li><a href="#mecene">Devenez Mécène</a></li>
                             <li><a href="#donnez">Donnez Votre Œuvre !</a></li>
                             <li><a href="#contact">Contact</a></li>
+                            <li><a href="#suivez">Suivez-nous</a></li>
                         </ul>
                     </div>
                 </div>
@@ -290,34 +292,45 @@
                 </div>
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <div class="form-group">
                                 <label for="first-name" class="col-sm-2 control-label">Prénom:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="first-name" />
+                                    <input type="text" class="form-control" id="first-name" name="first-name" />
+                                    <?php echo "<p class="text-danger">$errFirstName</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="last-name" class="col-sm-2 control-label">Nom:</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="last-name" />
+                                    <input type="text" class="form-control" id="last-name" name="last-name" />
+                                    <?php echo "<p class="text-danger">$errLastName</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="col-sm-2 control-label">Adresse email:</label>
                                 <div class="col-sm-8">
-                                    <input type="email" class="form-control" id="email" />
+                                    <input type="email" class="form-control" id="email" name="email" />
+                                    <?php echo "<p class="text-danger">$errEmail</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="col-sm-2 control-label">Message:</label>
                                 <div class="col-sm-8">
-                                    <textarea id="message" class="form-control" rows="3"></textarea>
+                                    <textarea id="message" class="form-control" rows="3" name="message"></textarea>
+                                    <?php echo "<p class="text-danger">$errMessage</p>";?>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="human" name="human" />
+                                    <?php echo "<p class="text-danger">$errHuman</p>";?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-8">
-                                    <button type="submit" class="btn btn-default center-block">Soumettre</button>
+                                    <button type="submit" name="submit" value="Soumettre" class="btn btn-default center-block">Soumettre</button>
                                 </div>
                             </div>
                         </form>
@@ -327,6 +340,7 @@
         </div>
 
         <footer>
+            <a name="suivez"></a>
             <div class="social-links">
                 <a><i class="fa fa-facebook-official fa-2x"></i></a>
                 <a><i class="fa fa-instagram fa-2x"></i></a>
@@ -338,5 +352,6 @@
 
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/parsley.min.js"></script>
     </body>
 </html>
