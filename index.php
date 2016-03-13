@@ -291,47 +291,36 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-offset-3 col-md-6">
-                        <form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <div class="col-md-offset-4 col-md-4">
+                        <?php if (isset($msg)) { echo '<div class="alert ', $alert, '" role="alert">', $msg, '</div>'; } ?>
+                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact">
                             <div class="form-group">
-                                <label for="first-name" class="col-sm-2 control-label">Prénom:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="first-name" name="first-name" />
-                                    <?php echo "<p class="text-danger">$errFirstName</p>";?>
-                                </div>
+                                <label for="first-name" class="control-label">Prénom:</label>
+                                <input type="text" class="form-control" id="first-name" name="first-name" value="<?php if (isset($firstName)) { echo $firstName; } ?>" />
+                                <?php if (isset($errFirstName)) { echo $errFirstName; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="last-name" class="col-sm-2 control-label">Nom:</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="last-name" name="last-name" />
-                                    <?php echo "<p class="text-danger">$errLastName</p>";?>
-                                </div>
+                                <label for="last-name" class="control-label">Nom:</label>
+                                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php if (isset($lastName)) { echo $lastName; } ?>" />
+                                <?php if (isset($errLastName)) { echo $errLastName; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="col-sm-2 control-label">Adresse email:</label>
-                                <div class="col-sm-8">
-                                    <input type="email" class="form-control" id="email" name="email" />
-                                    <?php echo "<p class="text-danger">$errEmail</p>";?>
-                                </div>
+                                <label for="email" class="control-label">Adresse email:</label>
+                                <input type="email" class="form-control" id="email" name="email" value="<?php if (isset($email)) { echo $email; } ?>" />
+                                <?php if (isset($errEmail)) { echo $errEmail; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="message" class="col-sm-2 control-label">Message:</label>
-                                <div class="col-sm-8">
-                                    <textarea id="message" class="form-control" rows="3" name="message"></textarea>
-                                    <?php echo "<p class="text-danger">$errMessage</p>";?>
-                                </div>
+                                <label for="message" class="control-label">Message:</label>
+                                <textarea id="message" class="form-control" rows="3" name="message"><?php if (isset($message)) { echo $message; } ?></textarea>
+                                <?php if (isset($errMessage)) { echo $errMessage; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                                <div class="col-sm-2">
-                                    <input type="text" class="form-control" id="human" name="human" />
-                                    <?php echo "<p class="text-danger">$errHuman</p>";?>
-                                </div>
+                                <label for="human" class="control-label">2 + 3 = ?</label>
+                                <input type="number" class="form-control" id="human" name="human" maxlength="3" value="<?php if (isset($human)) { echo $human; } ?>" />
+                                <?php if (isset($errHuman)) { echo $errHuman; } ?>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-8">
-                                    <button type="submit" name="submit" value="Soumettre" class="btn btn-default center-block">Soumettre</button>
-                                </div>
+                                <button type="submit" name="submit" value="submit" class="btn btn-default center-block">Soumettre</button>
                             </div>
                         </form>
                     </div>
