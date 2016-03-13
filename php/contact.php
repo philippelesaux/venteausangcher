@@ -54,7 +54,7 @@ if (isset($_POST["submit"])) {
 
     // If no errors, send the email!
     if (!$errFirstName && !$errLastName && !$errEmail && !$errMessage && !$errHuman) {
-        $to =       "lesauxp@gmail.com";
+        $to =       "contact@venteausangcher.com";
         $subject =  "Message from $firstName $lastName";
         $body =     "From: $firstName $lastName\r\n" .
                     "Email: $email\r\n" .
