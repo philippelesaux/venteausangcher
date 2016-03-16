@@ -87,10 +87,10 @@ a.split {
   /* can be treated like a fallback */
   background-color: #9E0000;
   /* will be "on top", if browser supports it */
-  background-image: linear-gradient(45deg, #780000, #ff6666);
+  background-image: linear-gradient(45deg, #360000, #FF4545);
   /* these will reset other properties, like background-position, but it does know what you mean */
   background: #9E0000;
-  background: linear-gradient(45deg, #780000, #ff6666); }
+  background: linear-gradient(45deg, #360000, #FF4545); }
 
 .jumbotron {
   background-color: transparent;
