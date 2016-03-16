@@ -116,6 +116,7 @@ a.split {
 }
 .jumbotron {
     background-color: transparent;
+    min-height: 100vh;
     color: white;
     text-align: center;
     padding: 5em 0 7em;
@@ -124,6 +125,9 @@ a.split {
         &.script-font {
             font-family: $script-font;
             font-size: 6em;
+            @media screen and (max-width: 320px) {
+                font-size: 5em;
+            }
         }
         small {
             color: #ff9191;

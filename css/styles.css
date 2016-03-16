@@ -91,6 +91,7 @@ a.split {
 
 .jumbotron {
   background-color: transparent;
+  min-height: 100vh;
   color: white;
   text-align: center;
   padding: 5em 0 7em; }
@@ -99,6 +100,9 @@ a.split {
     .jumbotron h1.script-font {
       font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif;
       font-size: 6em; }
+      @media screen and (max-width: 320px) {
+        .jumbotron h1.script-font {
+          font-size: 5em; } }
     .jumbotron h1 small {
       color: #ff9191; }
   .jumbotron p {
