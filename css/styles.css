@@ -58,6 +58,7 @@ a.split {
   /* Link highlight color in navbar */
   /* Removes border from open hamburger */ }
   .navbar-default .navbar-nav > li > a {
+    font-family: "Julius Sans One", sans-serif;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1em;

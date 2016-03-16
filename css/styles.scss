@@ -72,6 +72,7 @@ a.split {
     border: none;
     /* Link highlight color in navbar */
     .navbar-nav>li>a {
+        font-family: $heading-font;
         color: white;
         text-transform: uppercase;
         letter-spacing: 0.1em;

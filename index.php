@@ -34,12 +34,13 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#a-propos">À Propos</a></li>
-                            <li><a href="#devenez-sponsors">Devenez Sponsor</a></li>
-                            <li><a href="#nos-sponsors">Nos Sponsors</a></li>
-                            <li><a href="#mecene">Devenez Mécène</a></li>
                             <li><a href="#donnez">Donnez Votre Œuvre !</a></li>
+                            <li><a href="#suivez">Suivez-Nous !</a></li>
+                            <li><a href="#catalogue">Le Catalogue</a></li>
+                            <li><a href="#nos-sponsors">Nos Sponsors et Mécène</a></li>
+                            <li><a href="#devenez-sponsors">Devenez Sponsors</a></li>
+                            <li><a href="#mecene">Devenez Mécène</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <li><a href="#suivez">Suivez-nous</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,6 +56,7 @@
         </div>
 
         <div class="container">
+
             <a name="a-propos" class="split"></a>
             <section class="bio">
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
@@ -85,6 +87,7 @@
                     </div>
                 </div>
             </section>
+
             <a name="devenez-sponsors" class="split"></a>
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
@@ -184,6 +187,16 @@
                     </div>
                 </div>
             </section>
+
+            <a name="catalogue" class="split"></a>
+            <section>
+                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+                <h2>Le Catalogue</h2>
+                <div class="row">
+                    <p class="center-text">Téléchargeable à partir du 29 mai prochain...</p>
+                </div>
+            </section>
+
             <a name="nos-sponsors" class="split"></a>
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
@@ -192,6 +205,7 @@
                     <p class="center-text">Arrive bientôt...</p>
                 </div>
             </section>
+
             <a name="mecene" class="split"></a>
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
@@ -224,6 +238,7 @@
                     </div>
                 </div>
             </section>
+
             <a name="donnez" class="split"></a>
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
@@ -269,6 +284,7 @@
                 </div>
                 <div class="clearfix"></div>
             </section>
+
             <a name="contact" class="split"></a>
             <section class="contact">
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
