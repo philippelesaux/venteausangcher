@@ -248,7 +248,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-offset-2 col-md-4">
                         <a class="thumbnail">
                             <i class="fa fa-university fa-5x"></i>
                             <div class="caption">
@@ -257,21 +257,12 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-4">
-                        <a class="thumbnail">
+                    <div class="col-sm-6 col-md-4">
+                        <a href="http://goo.gl/forms/f4ZpKaehmK" class="thumbnail">
                             <i class="fa fa-laptop fa-5x"></i>
                             <div class="caption">
                                 <h4>Je donne mon œuvre</h4>
                                 <p>Formulaire en ligne d'informations sur l'auteur et l'œuvre</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a class="thumbnail">
-                            <i class="fa fa-envelope fa-5x"></i>
-                            <div class="caption">
-                                <h4>Je donne mon œuvre</h4>
-                                <p>Formulaire version papier à renvoyer rempli avec photos par mail</p>
                             </div>
                         </a>
                     </div>
