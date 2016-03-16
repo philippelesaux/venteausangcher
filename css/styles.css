@@ -48,6 +48,9 @@ a.split {
   display: block;
   margin: 0 0 5em; }
 
+.navbar-nav {
+  padding-left: 100px; }
+
 /* Removes default colors in navbar */
 .navbar-default {
   background-color: transparent;
