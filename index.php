@@ -124,7 +124,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li>Communication de vos nom et logo sur chacun de nos supports:
+                                    <li>Communication de vos nom et logo sur chacun de nos supports :
                                         <ul>
                                             <li>sur la première page du catalogue</li>
                                             <li>sur la page d'accueil du site internet</li>
@@ -151,7 +151,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li>Communication de votre marque sur les supports majeurs:
+                                    <li>Communication de votre marque sur les supports majeurs :
                                         <ul>
                                             <li>sur let site internet</li>
                                             <li>dans le catalogue</li>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li>Communication de votre marque sur chacun des supports:
+                                    <li>Communication de votre marque sur chacun des supports :
                                         <ul>
                                             <li>sur let site internet</li>
                                             <li>dans le catalogue</li>
@@ -258,7 +258,7 @@
                             <li>Dirigée par Me. Pierre Cornette de Saint-Cyr</li>
                             <li>A vous de jouer... Et de créer !</li>
                             <li>Attention vous n'avez que jusqu'au <time datetime="2016-04-20">20 Avril 2016</time> pour nous faire parvenir vos œuvres.</li>
-                            <li>N'hésitez pas à nous contacter: <a href="mailto:contact@venteausangcher.com">contact@venteausangcher.com</a></li>
+                            <li>N'hésitez pas à nous contacter : <a href="mailto:contact@venteausangcher.com">contact@venteausangcher.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -291,10 +291,10 @@
                 <h2>Contact</h2>
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">
-                        <p>N'hésitez pas à nous contacter pour toute information via:</p>
+                        <p>N'hésitez pas à nous contacter pour toute information via :</p>
                         <p><a href="mailto:contact@venteausangcher.com"><span class="fa fa-envelope pad-right" aria-hidden="true"></span>contact@venteausangcher.com</a></p>
                         <p><a href="tel:+33-06-45-03-38-05"><span class="fa fa-phone pad-right" aria-hidden="true"></span>06.45.03.38.05</a></p>
-                        <p>ou via le formulaire ci-dessous:</p>
+                        <p>ou via le formulaire ci-dessous :</p>
                     </div>
                 </div>
                 <div class="row">
@@ -302,22 +302,22 @@
                         <?php if (isset($msg)) { echo '<div class="alert ', $alert, '" role="alert">', $msg, '</div>'; } ?>
                         <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact">
                             <div class="form-group">
-                                <label for="first-name" class="control-label">Prénom:</label>
+                                <label for="first-name" class="control-label">Prénom :</label>
                                 <input type="text" class="form-control" id="first-name" name="first-name" value="<?php if (isset($firstName)) { echo $firstName; } ?>" />
                                 <?php if (isset($errFirstName)) { echo $errFirstName; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="last-name" class="control-label">Nom:</label>
+                                <label for="last-name" class="control-label">Nom :</label>
                                 <input type="text" class="form-control" id="last-name" name="last-name" value="<?php if (isset($lastName)) { echo $lastName; } ?>" />
                                 <?php if (isset($errLastName)) { echo $errLastName; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="control-label">Adresse email:</label>
+                                <label for="email" class="control-label">Adresse email :</label>
                                 <input type="email" class="form-control" id="email" name="email" value="<?php if (isset($email)) { echo $email; } ?>" />
                                 <?php if (isset($errEmail)) { echo $errEmail; } ?>
                             </div>
                             <div class="form-group">
-                                <label for="message" class="control-label">Message:</label>
+                                <label for="message" class="control-label">Message :</label>
                                 <textarea id="message" class="form-control" rows="3" name="message"><?php if (isset($message)) { echo $message; } ?></textarea>
                                 <?php if (isset($errMessage)) { echo $errMessage; } ?>
                             </div>
