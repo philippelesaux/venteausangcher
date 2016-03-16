@@ -94,18 +94,18 @@
                     <div class="col-sm-offset-1 col-sm-10">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Faites avancer la recherche médicale sur la leucémie et le sang</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Faites avancer la recherche médicale sur la leucémie et le sang</p></div></div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Bénéficiez d'une communication importante et peu onéreuse</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Bénéficiez d'une communication importante et peu onéreuse</p></div></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Dynamisez votre présence auprès d'un public varié, notamment jeune ou ayant un attrait pour l'art</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Dynamisez votre présence auprès d'un public varié, notamment jeune ou ayant un attrait pour l'art</p></div></div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Associez votre entreprise à un événement original et prometteur</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Associez votre entreprise à un événement original et prometteur</p></div></div>
                             </div>
                         </div>
                     </div>
@@ -207,18 +207,18 @@
                     <div class="col-sm-offset-1 col-sm-10">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Pour participer au financement de la recherche contre la leucémie et contre les autres maladies du sang</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Pour participer au financement de la recherche contre la leucémie et contre les autres maladies du sang</p></div></div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Pour dynamiser sa présence auprès d’un public large, notamment jeune</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Pour dynamiser sa présence auprès d’un public large, notamment jeune</p></div></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Pour associer son image à un événement utile, sérieux, médiatisé et original</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Pour associer son image à un événement utile, sérieux, médiatisé et original</p></div></div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="panel"><div class="panel-body"><p>Pour apporter son soutien à un projet étudiant et audacieux</p></div></div>
+                                <div class="panel same-height"><div class="panel-body"><p>Pour apporter son soutien à un projet étudiant et audacieux</p></div></div>
                             </div>
                         </div>
                     </div>
@@ -341,6 +341,8 @@
 
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="js/parsley.min.js"></script>
+        <script src="js/vendor/jquery.matchHeight.js" type="text/javascript"></script>
+        <script src="js/vendor/parsley.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
