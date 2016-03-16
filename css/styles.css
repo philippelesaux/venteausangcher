@@ -1,3 +1,6 @@
+@font-face {
+  font-family: "Edwardian Script ITC";
+  src: url("../fonts/Edwardian_Script_ITC.ttf") format("truetype"); }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Julius Sans One", sans-serif;
   color: #9E0000; }
@@ -93,6 +96,9 @@ a.split {
   padding: 5em 0 7em; }
   .jumbotron h1 {
     color: white; }
+    .jumbotron h1.script-font {
+      font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif;
+      font-size: 6em; }
     .jumbotron h1 small {
       color: #ff9191; }
   .jumbotron p {

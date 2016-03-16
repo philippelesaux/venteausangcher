@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Edwardian Script ITC";
+  src: url("../fonts/Edwardian_Script_ITC.ttf") format('truetype');
+}
+
 $primary-color: #9E0000;
 $secondary-color: #555;
 
+$script-font: 'Edwardian Script ITC', 'Julius Sans One', Times, serif;
 $heading-font: 'Julius Sans One', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
@@ -115,6 +121,10 @@ a.split {
     padding: 5em 0 7em;
     h1 {
         color: white;
+        &.script-font {
+            font-family: $script-font;
+            font-size: 6em;
+        }
         small {
             color: #ff9191;
         }

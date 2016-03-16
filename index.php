@@ -12,7 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,700,700italic,300italic' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
         <title>Vente Au Sang Cher</title>
     </head>
     <body>
@@ -46,7 +46,7 @@
             </nav>
             <div class="jumbotron">
                 <div class="container">
-                    <h1>Vente Au Sang Cher</h1>
+                    <h1 class="script-font">Vente Au Sang Cher</h1>
                     <h1><small>Vente aux enchères caritative</small></h1>
                     <p class="location">Paris</p>
                     <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
