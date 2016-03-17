@@ -16,30 +16,27 @@
         <title>Vente Au Sang Cher</title>
     </head>
     <body>
-        <div class="background-color">
+        <div class="background-color" id="home">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="#">
-                          <img alt="Vente Aux Sang Cher logo" src="img/logo.png" height="100" />
-                      </a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <img alt="Vente Aux Sang Cher logo" src="img/logo.png" height="100" />
+                        </a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#a-propos">À Propos</a></li>
                             <li><a href="#donnez">Donnez Votre Œuvre !</a></li>
-                            <li><a href="#suivez">Suivez-Nous !</a></li>
-                            <li><a href="#catalogue">Le Catalogue</a></li>
-                            <li><a href="#nos-sponsors">Nos Sponsors et Mécène</a></li>
-                            <li><a href="#devenez-sponsors">Devenez Sponsors</a></li>
-                            <li><a href="#mecene">Devenez Mécène</a></li>
+                            <li><a href="#catalogue">Les Œuvres</a></li>
+                            <li><a href="#nos-sponsors">Sponsors et Mécènes</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -57,8 +54,7 @@
 
         <div class="container">
 
-            <a name="a-propos" class="split"></a>
-            <section class="bio">
+            <section class="bio" id="a-propos">
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
                 <h2>À Propos</h2>
                 <div class="row">
@@ -88,7 +84,67 @@
                 </div>
             </section>
 
-            <a name="devenez-sponsors" class="split"></a>
+            <section id="donnez">
+                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+                <h2>Donnez Votre Œuvre !</h2>
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <p class="col-sm-6 center-text"><em>Vous êtes artiste?</em></p>
+                        <p class="col-sm-6 center-text"><em>Vous souhaitez faire une bonne action?</em></p>
+                    </div>
+                </div>
+                <div class="row pad-vertical">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <h3>Donnez votre œuvre pour la bonne cause !</h3>
+                        <ul>
+                            <li>Vente aux enchères caritative</li>
+                            <li>Au profit de l'association Laurette Fugain, pour la recherche sur la leucémie et le sang.</li>
+                            <li>Dirigée par Me. Pierre Cornette de Saint-Cyr</li>
+                            <li>A vous de jouer... Et de créer !</li>
+                            <li>Attention vous n'avez que jusqu'au <time datetime="2016-04-20">20 Avril 2016</time> pour nous faire parvenir vos œuvres.</li>
+                            <li>N'hésitez pas à nous contacter : <a href="mailto:contact@venteausangcher.com">contact@venteausangcher.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-offset-2 col-md-4">
+                        <a class="thumbnail">
+                            <i class="fa fa-university fa-5x"></i>
+                            <div class="caption">
+                                <h4>Je donne mon œuvre</h4>
+                                <p>Conditions et règlements</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="http://goo.gl/forms/f4ZpKaehmK" class="thumbnail">
+                            <i class="fa fa-laptop fa-5x"></i>
+                            <div class="caption">
+                                <h4>Je donne mon œuvre</h4>
+                                <p>Formulaire en ligne d'informations sur l'auteur et l'œuvre</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+            <section id="catalogue">
+                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+                <h2>Le Catalogue</h2>
+                <div class="row">
+                    <p class="center-text">Téléchargeable à partir du 29 mai prochain...</p>
+                </div>
+            </section>
+
+            <section id="nos-sponsors">
+                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+                <h2>Nos Sponsors</h2>
+                <div class="row">
+                    <p class="center-text">Arrive bientôt...</p>
+                </div>
+            </section>
+
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
                 <h2>Devenez Sponsor</h2>
@@ -188,25 +244,6 @@
                 </div>
             </section>
 
-            <a name="catalogue" class="split"></a>
-            <section>
-                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                <h2>Le Catalogue</h2>
-                <div class="row">
-                    <p class="center-text">Téléchargeable à partir du 29 mai prochain...</p>
-                </div>
-            </section>
-
-            <a name="nos-sponsors" class="split"></a>
-            <section>
-                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                <h2>Nos Sponsors</h2>
-                <div class="row">
-                    <p class="center-text">Arrive bientôt...</p>
-                </div>
-            </section>
-
-            <a name="mecene" class="split"></a>
             <section>
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
                 <h2>Devenez Mécène</h2>
@@ -239,54 +276,7 @@
                 </div>
             </section>
 
-            <a name="donnez" class="split"></a>
-            <section>
-                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                <h2>Donnez Votre Œuvre !</h2>
-                <div class="row">
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <p class="col-sm-6 center-text"><em>Vous êtes artiste?</em></p>
-                        <p class="col-sm-6 center-text"><em>Vous souhaitez faire une bonne action?</em></p>
-                    </div>
-                </div>
-                <div class="row pad-vertical">
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <h3>Donnez votre œuvre pour la bonne cause !</h3>
-                        <ul>
-                            <li>Vente aux enchères caritative</li>
-                            <li>Au profit de l'association Laurette Fugain, pour la recherche sur la leucémie et le sang.</li>
-                            <li>Dirigée par Me. Pierre Cornette de Saint-Cyr</li>
-                            <li>A vous de jouer... Et de créer !</li>
-                            <li>Attention vous n'avez que jusqu'au <time datetime="2016-04-20">20 Avril 2016</time> pour nous faire parvenir vos œuvres.</li>
-                            <li>N'hésitez pas à nous contacter : <a href="mailto:contact@venteausangcher.com">contact@venteausangcher.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-offset-2 col-md-4">
-                        <a class="thumbnail">
-                            <i class="fa fa-university fa-5x"></i>
-                            <div class="caption">
-                                <h4>Je donne mon œuvre</h4>
-                                <p>Conditions et règlements</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a href="http://goo.gl/forms/f4ZpKaehmK" class="thumbnail">
-                            <i class="fa fa-laptop fa-5x"></i>
-                            <div class="caption">
-                                <h4>Je donne mon œuvre</h4>
-                                <p>Formulaire en ligne d'informations sur l'auteur et l'œuvre</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </section>
-
-            <a name="contact" class="split"></a>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
                 <h2>Contact</h2>
                 <div class="row">
@@ -336,7 +326,6 @@
         </div>
 
         <footer>
-            <a name="suivez"></a>
             <div class="social-links">
                 <a href="http://facebook.com"><i class="fa fa-facebook-official fa-3x"></i></a>
                 <a href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
