@@ -15,7 +15,7 @@ p {
   text-align: justify; }
 
 section {
-  padding-bottom: 4em;
+  padding: 5em 0;
   border-bottom: 1px solid #eee; }
   section h2 {
     margin-bottom: 1em;
