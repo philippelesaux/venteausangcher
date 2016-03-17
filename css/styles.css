@@ -26,13 +26,16 @@ section {
     width: 1em;
     margin: 0 auto 1em; }
 
-a,
-a p {
-  color: #9E0000; }
-  a:focus, a:hover,
-  a p:focus,
-  a p:hover {
-    color: #9E0000; }
+a {
+  color: #9E0000;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  a:hover {
+    color: #9E0000;
+    text-decoration: none;
+    border-bottom: 1px solid #9E0000; }
 
 form {
   margin-top: 2em; }
