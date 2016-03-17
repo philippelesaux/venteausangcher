@@ -338,10 +338,10 @@
         <footer>
             <a name="suivez"></a>
             <div class="social-links">
-                <a><i class="fa fa-facebook-official fa-2x"></i></a>
-                <a><i class="fa fa-instagram fa-2x"></i></a>
-                <a><i class="fa fa-twitter fa-2x"></i></a>
-                <a><i class="fa fa-snapchat fa-2x"></i></a>
+                <a href="http://facebook.com"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
+                <a href="http://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
+                <a href="http://snapchat.com"><i class="fa fa-snapchat fa-3x"></i></a>
             </div>
             <p>&copy; 2016 Philippe Gigleux</p>
         </footer>
