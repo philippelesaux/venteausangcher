@@ -156,6 +156,12 @@ a.split {
         border: 2px solid white;
     }
 }
+.carousel-control {
+    &.right,
+    &.left {
+        background-image: none;
+    }
+}
 .location {
     &::before {
         content: "\2014\00a0";

@@ -42,13 +42,38 @@
                     </div>
                 </div>
             </nav>
-            <div class="jumbotron">
-                <div class="container">
-                    <h1 class="script-font">Vente Au Sang Cher</h1>
-                    <h1><small>Vente aux enchères caritative</small></h1>
-                    <p class="location">Paris</p>
-                    <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="jumbotron">
+                            <div class="container">
+                                <h1 class="script-font">Vente Au Sang Cher</h1>
+                                <h1><small>Vente aux enchères caritative</small></h1>
+                                <p class="location">Paris</p>
+                                <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="jumbotron">
+                            <div class="container">
+                                <h1 class="script-font">Vente Au Sang Cher</h1>
+                                <h1><small>Vente aux enchères caritative</small></h1>
+                                <p class="location">Paris</p>
+                                <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
 
@@ -290,7 +315,7 @@
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4">
                         <?php if (isset($msg)) { echo '<div class="alert ', $alert, '" role="alert">', $msg, '</div>'; } ?>
-                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact">
+                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact" data-parsley-validate>
                             <div class="form-group">
                                 <label for="first-name" class="control-label">Prénom :</label>
                                 <input type="text" class="form-control" id="first-name" name="first-name" value="<?php if (isset($firstName)) { echo $firstName; } ?>" />
@@ -339,6 +364,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="js/vendor/jquery.matchHeight.js" type="text/javascript"></script>
         <script src="js/vendor/parsley.min.js"></script>
+        <script src="js/vendor/fr.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

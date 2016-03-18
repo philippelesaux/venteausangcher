@@ -124,6 +124,9 @@ a.split {
     padding: 0.5em;
     border: 2px solid white; }
 
+.carousel-control.right, .carousel-control.left {
+  background-image: none; }
+
 .location::before {
   content: "\2014\00a0"; }
 .location::after {
