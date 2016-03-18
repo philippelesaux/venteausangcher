@@ -44,7 +44,7 @@
             </nav>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
+                    <div class="item active" id="home-jumbo">
                         <div class="jumbotron">
                             <div class="container">
                                 <h1 class="script-font">Vente Au Sang Cher</h1>
@@ -54,13 +54,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" id="donnez-jumbo">
                         <div class="jumbotron">
                             <div class="container">
-                                <h1 class="script-font">Vente Au Sang Cher</h1>
-                                <h1><small>Vente aux enchères caritative</small></h1>
-                                <p class="location">Paris</p>
-                                <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
+                                <img src="img/drop.png" alt="Offrez votre œuvre pour une bonne cause !" />
+                                <div class="head-text">
+                                    <h1>FAITES UNE B.A.rt</h1>
+                                    <p>Révélez votre talent et votre générosité.</p>
+                                    <p>Rendez-vous avant le</p>
+                                    <p><time datetime="2016-05-20">20 mai 2016</time></p>
+                                </div>
                             </div>
                         </div>
                     </div>

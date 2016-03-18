@@ -100,29 +100,52 @@ a.split {
   background-color: transparent;
   min-height: 100vh;
   color: white;
-  text-align: center;
   padding: 5em 0 7em; }
   .jumbotron h1 {
     color: white; }
-    .jumbotron h1.script-font {
-      font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif;
-      font-size: 6em; }
-      @media screen and (max-width: 320px) {
-        .jumbotron h1.script-font {
-          font-size: 5em; } }
     .jumbotron h1 small {
       color: #ff9191; }
   .jumbotron p {
     font-family: "Julius Sans One", sans-serif;
-    color: #ff9191;
-    text-align: center; }
+    color: #ff9191; }
   .jumbotron time {
-    display: inline-block;
     color: white;
     letter-spacing: 0.1em;
-    font-size: 1.25em;
+    font-size: 1.25em; }
+
+#home-jumbo .jumbotron {
+  text-align: center; }
+  #home-jumbo .jumbotron h1.script-font {
+    font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif;
+    font-size: 6em; }
+    @media screen and (max-width: 320px) {
+      #home-jumbo .jumbotron h1.script-font {
+        font-size: 5em; } }
+  #home-jumbo .jumbotron p {
+    text-align: center; }
+  #home-jumbo .jumbotron time {
+    display: inline-block;
     padding: 0.5em;
     border: 2px solid white; }
+
+@media screen and (max-width: 768px) {
+  #donnez-jumbo .jumbotron .container * {
+    margin: 0 auto; } }
+#donnez-jumbo .jumbotron img {
+  float: right;
+  max-width: 50%;
+  min-width: 150px; }
+  @media screen and (max-width: 768px) {
+    #donnez-jumbo .jumbotron img {
+      float: none;
+      display: block;
+      padding-bottom: 2em; } }
+  #donnez-jumbo .jumbotron img time {
+    display: block; }
+#donnez-jumbo .jumbotron .head-text {
+  width: 50%; }
+  #donnez-jumbo .jumbotron .head-text p {
+    text-align: left; }
 
 .carousel-control.right, .carousel-control.left {
   background-image: none; }

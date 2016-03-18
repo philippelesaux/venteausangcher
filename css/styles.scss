@@ -127,17 +127,9 @@ a.split {
     background-color: transparent;
     min-height: 100vh;
     color: white;
-    text-align: center;
     padding: 5em 0 7em;
     h1 {
         color: white;
-        &.script-font {
-            font-family: $script-font;
-            font-size: 6em;
-            @media screen and (max-width: 320px) {
-                font-size: 5em;
-            }
-        }
         small {
             color: #ff9191;
         }
@@ -145,15 +137,57 @@ a.split {
     p {
         font-family: $heading-font;
         color: #ff9191;
+    }
+    time {
+        color: white;
+        letter-spacing: 0.1em;
+        font-size:  1.25em;
+    }
+}
+#home-jumbo .jumbotron {
+    text-align: center;
+    h1 {
+        &.script-font {
+            font-family: $script-font;
+            font-size: 6em;
+            @media screen and (max-width: 320px) {
+                font-size: 5em;
+            }
+        }
+    }
+    p {
         text-align: center;
     }
     time {
         display: inline-block;
-        color: white;
-        letter-spacing: 0.1em;
-        font-size:  1.25em;
         padding: 0.5em;
         border: 2px solid white;
+    }
+}
+#donnez-jumbo .jumbotron {
+    .container * {
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+    img {
+        float: right;
+        max-width: 50%;
+        min-width: 150px;
+        @media screen and (max-width: 768px) {
+            float: none;
+            display: block;
+            padding-bottom: 2em;
+        }
+        time {
+            display: block;
+        }
+    }
+    .head-text {
+        width: 50%;
+        p {
+            text-align: left;
+        }
     }
 }
 .carousel-control {
