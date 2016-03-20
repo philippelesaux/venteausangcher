@@ -1,4 +1,10 @@
-<?php include('php/contact.php'); ?>
+<?php
+    include('php/contact.php');
+
+    $siteKeyTest = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+    $siteKeyReal = "6LdKABsTAAAAAIZWqk_RxLhpqeTuuUzDevEPkDEM";
+    $siteKey = $siteKeyTest;
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,6 +20,8 @@
 
         <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
         <title>Vente Au Sang Cher</title>
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <div class="background-color" id="home">
@@ -48,7 +56,7 @@
                         <div class="jumbotron">
                             <div class="container">
                                 <h1 class="script-font">Vente Au Sang Cher</h1>
-                                <h1><small>Vente aux enchères caritative</small></h1>
+                                <h2>Vente aux enchères caritative</h2>
                                 <p class="location">Paris</p>
                                 <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
                             </div>
@@ -57,7 +65,7 @@
                     <div class="item" id="donnez-jumbo">
                         <div class="jumbotron">
                             <div class="container">
-                                <img src="img/drop.png" alt="Offrez votre œuvre pour une bonne cause !" />
+                                <img src="img/drop.svg" alt="Offrez votre œuvre pour une bonne cause !" />
                                 <div class="head-text">
                                     <h1>FAITES UNE B.A.rt</h1>
                                     <p>Révélez votre talent et votre générosité.</p>
@@ -121,17 +129,16 @@
                         <p class="col-sm-6 center-text"><em>Vous souhaitez faire une bonne action?</em></p>
                     </div>
                 </div>
-                <div class="row pad-vertical">
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <h3>Donnez votre œuvre pour la bonne cause !</h3>
-                        <ul>
-                            <li>Vente aux enchères caritative</li>
-                            <li>Au profit de l'association Laurette Fugain, pour la recherche sur la leucémie et le sang.</li>
-                            <li>Dirigée par Me. Pierre Cornette de Saint-Cyr</li>
-                            <li>A vous de jouer... Et de créer !</li>
-                            <li>Attention vous n'avez que jusqu'au <time datetime="2016-04-20">20 Avril 2016</time> pour nous faire parvenir vos œuvres.</li>
-                            <li>N'hésitez pas à nous contacter : <a href="mailto:contact@venteausangcher.com">contact@venteausangcher.com</a></li>
-                        </ul>
+                <div class="pad-vertical clearfix">
+                    <h3>Donnez votre œuvre pour la bonne cause !</h3>
+                    <div id="donnez-drop">
+                        <img src="img/drop.svg" alt="Offrez votre œuvre pour une bonne cause !" />
+                        <div class="head-text">
+                            <h1>FAITES UNE B.A.rt</h1>
+                            <p>Révélez votre talent et votre générosité.</p>
+                            <p>Rendez-vous avant le</p>
+                            <p><time datetime="2016-05-20">20 mai 2016</time></p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -344,6 +351,7 @@
                                 <input type="number" class="form-control" id="human" name="human" maxlength="3" value="<?php if (isset($human)) { echo $human; } ?>" />
                                 <?php if (isset($errHuman)) { echo $errHuman; } ?>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div>
                             <div class="form-group">
                                 <button type="submit" name="submit" value="submit" class="btn btn-default center-block">Soumettre</button>
                             </div>
