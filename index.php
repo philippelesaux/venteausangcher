@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
         <title>Vente Au Sang Cher</title>
 
-        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
     </head>
     <body>
         <div class="background-color" id="home">
@@ -351,7 +351,7 @@
                                 <input type="number" class="form-control" id="human" name="human" maxlength="3" value="<?php if (isset($human)) { echo $human; } ?>" />
                                 <?php if (isset($errHuman)) { echo $errHuman; } ?>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div>
+                            <!-- <div class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div> -->
                             <div class="form-group">
                                 <button type="submit" name="submit" value="submit" class="btn btn-default center-block">Soumettre</button>
                             </div>

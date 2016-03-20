@@ -1,6 +1,6 @@
 <?php
 
-include('php/recaptcha.php');
+// include('php/recaptcha.php');
 require('php/vendor/autoload.php');
 
 $sendToEmail = "lesauxp@gmail.com";
@@ -16,10 +16,10 @@ if (isset($_POST["submit"])) {
     if (isset($_POST['email'])) { $email = trim($_POST['email']); }
     if (isset($_POST['message'])) { $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); }
     if (isset($_POST['human'])) { $human = trim($_POST['human']); }
-    if (isset($_POST['g-recaptcha-response'])) {
-        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-        $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
-    }
+    // if (isset($_POST['g-recaptcha-response'])) {
+    //     $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+    //     $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+    // }
 
     // Check to see if name or eail have header injections
     if (has_header_injection($firstName) || has_header_injection($lastName) || has_header_injection($email) || has_header_injection($human)) {
@@ -63,7 +63,7 @@ if (isset($_POST["submit"])) {
     }
 
     // If no errors, send the email!
-    if (!$errFirstName && !$errLastName && !$errEmail && !$errMessage && !$errHuman && $resp->isSuccess()) {
+    if (!$errFirstName && !$errLastName && !$errEmail && !$errMessage && !$errHuman) {
         $to =       $sendToEmail;
         $subject =  "Message from $firstName $lastName";
         $body =     "From: $firstName $lastName\r\n" .
