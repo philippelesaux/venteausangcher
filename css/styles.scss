@@ -307,6 +307,7 @@ a.thumbnail:hover {
     a:hover {
         color: $primary-color;
         cursor: pointer;
+        border-bottom: none;
     }
     i {
         margin: 0.25em;

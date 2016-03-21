@@ -3,7 +3,7 @@
 // include('php/recaptcha.php');
 require('php/vendor/autoload.php');
 
-$sendToEmail = "lesauxp@gmail.com";
+$sendToEmail = "contact@venteausangcher.com";
 
 // Check for header injections
 function has_header_injection($str) {
@@ -11,11 +11,11 @@ function has_header_injection($str) {
 }
 
 if (isset($_POST["submit"])) {
-    if (isset($_POST['first-name'])) { $firstName = trim($_POST['first-name']); }
-    if (isset($_POST['last-name'])) { $lastName = trim($_POST['last-name']); }
-    if (isset($_POST['email'])) { $email = trim($_POST['email']); }
+    if (isset($_POST['first-name'])) { $firstName = trim(filter_var($_POST['first-name'], FILTER_SANITIZE_STRING)); }
+    if (isset($_POST['last-name'])) { $lastName = trim(filter_var($_POST['last-name'], FILTER_SANITIZE_STRING)); }
+    if (isset($_POST['email'])) { $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL)); }
     if (isset($_POST['message'])) { $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); }
-    if (isset($_POST['human'])) { $human = trim($_POST['human']); }
+    if (isset($_POST['human'])) { $human = trim(filter_var($_POST['human'], FILTER_SANITIZE_NUMBER_INT)); }
     // if (isset($_POST['g-recaptcha-response'])) {
     //     $recaptcha = new \ReCaptcha\ReCaptcha($secret);
     //     $resp = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
@@ -73,10 +73,14 @@ if (isset($_POST["submit"])) {
                     "Reply-To: $to";
 
         if (mail ($to, $subject, $body, $replyto)) {
+            // sends success message to HTML
             $msg = "Merci!";
+            // sets class of success message for bootstrap
             $alert = "alert-success";
         } else {
+            //sends error message to HTML
             $msg = "There was a problem sending the message.";
+            // sets class of danger message for bootstrap
             $alert = "alert-danger";
         }
     }

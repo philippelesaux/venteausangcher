@@ -244,7 +244,8 @@ a.thumbnail:hover {
     color: #555; }
   .social-links a:hover {
     color: #9E0000;
-    cursor: pointer; }
+    cursor: pointer;
+    border-bottom: none; }
   .social-links i {
     margin: 0.25em; }
 
