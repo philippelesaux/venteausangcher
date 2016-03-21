@@ -325,30 +325,36 @@
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4">
                         <?php if (isset($msg)) { echo '<div class="alert ', $alert, '" role="alert">', $msg, '</div>'; } ?>
-                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact" data-parsley-validate>
+                        <div class="bs-callout bs-callout-warning hidden alert alert-danger" role="alert">
+                            This form seems to be invalid.
+                        </div>
+                        <div class="bs-callout bs-callout-info hidden alert alert-success" role="alert">
+                            Everything seems to be ok.
+                        </div>
+                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>#contact" data-parsley-validate id="form">
                             <div class="form-group">
                                 <label for="first-name" class="control-label">Prénom :</label>
-                                <input type="text" class="form-control" id="first-name" name="first-name" value="<?php if (isset($firstName)) { echo $firstName; } ?>" />
+                                <input type="text" class="form-control" id="first-name" name="first-name" value="<?php if (isset($firstName)) { echo $firstName; } ?>" required />
                                 <?php if (isset($errFirstName)) { echo $errFirstName; } ?>
                             </div>
                             <div class="form-group">
                                 <label for="last-name" class="control-label">Nom :</label>
-                                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php if (isset($lastName)) { echo $lastName; } ?>" />
+                                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php if (isset($lastName)) { echo $lastName; } ?>" required />
                                 <?php if (isset($errLastName)) { echo $errLastName; } ?>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="control-label">Adresse email :</label>
-                                <input type="email" class="form-control" id="email" name="email" value="<?php if (isset($email)) { echo $email; } ?>" />
+                                <input type="email" class="form-control" id="email" name="email" value="<?php if (isset($email)) { echo $email; } ?>" data-parsley-trigger="change" required />
                                 <?php if (isset($errEmail)) { echo $errEmail; } ?>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="control-label">Message :</label>
-                                <textarea id="message" class="form-control" rows="3" name="message"><?php if (isset($message)) { echo $message; } ?></textarea>
+                                <textarea id="message" class="form-control" rows="3" name="message" required><?php if (isset($message)) { echo $message; } ?></textarea>
                                 <?php if (isset($errMessage)) { echo $errMessage; } ?>
                             </div>
                             <div class="form-group">
                                 <label for="human" class="control-label">2 + 3 = ?</label>
-                                <input type="number" class="form-control" id="human" name="human" maxlength="3" value="<?php if (isset($human)) { echo $human; } ?>" />
+                                <input type="number" class="form-control" id="human" name="human" maxlength="3" value="<?php if (isset($human)) { echo $human; } ?>" data-parsley-type="number" required />
                                 <?php if (isset($errHuman)) { echo $errHuman; } ?>
                             </div>
                             <!-- <div class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div> -->
@@ -374,8 +380,8 @@
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="js/vendor/jquery.matchHeight.js" type="text/javascript"></script>
-        <script src="js/vendor/parsley.min.js"></script>
-        <script src="js/vendor/fr.js"></script>
+        <script src="js/vendor/parsley/parsley.min.js"></script>
+        <script src="js/vendor/parsley/i18n/fr.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
