@@ -28,38 +28,38 @@ if (isset($_POST["submit"])) {
 
     // Checks to make sure none of the fields are empty
     if ($firstName === "") {
-        $errFirstName = '<p class="text-danger">Sorry, all fields are required.</p>';
+        $errFirstName = '<p class="text-danger">Tous les champs doivent être complétés</p>';
     }
     if ($lastName === "") {
-        $errLastName = '<p class="text-danger">Sorry, all fields are required.</p>';
+        $errLastName = '<p class="text-danger">Tous les champs doivent être complétés</p>';
     }
     if ($email === "") {
-        $errEmail = '<p class="text-danger">Sorry, all fields are required.</p>';
+        $errEmail = '<p class="text-danger">Tous les champs doivent être complétés</p>';
     }
     if ($message === "") {
-        $errMessage = '<p class="text-danger">Sorry, all fields are required.</p>';
+        $errMessage = '<p class="text-danger">Tous les champs doivent être complétés</p>';
     }
     if ($human === "") {
-        $errHuman = '<p class="text-danger">Sorry, all fields are required.</p>';
+        $errHuman = '<p class="text-danger">Tous les champs doivent être complétés</p>';
     }
 
     // Validates the first and last name fields
     if (!(preg_match('/^[a-zA-Z ]*$/', $firstName))) {
-        $errFirstName = '<p class="text-danger">Sorry, names must be letters and spaces only.</p>';
+        $errFirstName = '<p class="text-danger">Lettres et espaces seulement</p>';
     }
     if (!(preg_match('/^[a-zA-Z ]*$/', $lastName))) {
-        $errLastName = '<p class="text-danger">Sorry, names must be letters and spaces only.</p>';
+        $errLastName = '<p class="text-danger">Lettres et espaces seulement</p>';
     }
 
     // Validates the email field
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errEmail = '<p class="text-danger">Invalid email format.</p>';
+        $errEmail = '<p class="text-danger">Format d\'adresse invalide</p>';
     }
 
     // Changes $human from a string to a number, then checks if the answer is correct
     $human = intval($human);
     if ($human !== 5) {
-        $errHuman = '<p class="text-danger">Your anti-spam is incorrect</p>';
+        $errHuman = '<p class="text-danger">Votre anti-spam est incorrect</p>';
     }
 
     // If no errors, send the email!
@@ -79,7 +79,7 @@ if (isset($_POST["submit"])) {
             $alert = "alert-success";
         } else {
             //sends error message to HTML
-            $msg = "There was a problem sending the message.";
+            $msg = "Une erreur est survenue dans l'envoi du message";
             // sets class of danger message for bootstrap
             $alert = "alert-danger";
         }
