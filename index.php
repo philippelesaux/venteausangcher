@@ -55,7 +55,7 @@
                     <div class="item active" id="home-jumbo">
                         <div class="jumbotron">
                             <div class="container">
-                                <h1 class="script-font">Vente Au Sang Cher</h1>
+                                <h1 class="script-font">Vente au Sang Cher</h1>
                                 <h2>Vente aux enchères caritative</h2>
                                 <p class="location">Paris</p>
                                 <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
@@ -107,7 +107,7 @@
                         <a href="http://cornettedesaintcyr.fr/" target="_blank">
                             <div class="image pierre"></div>
                         </a>
-                        <p>Président d’honneur bénévole du Palais de Tokyo, dédié à la création contemporaine, Maître Pierre Cornette de Saint-Cyr est sans doute le commissaire priseur le plus connu de france et se bat avec ardeur pour l’art contemporain français, au point d’en être devenu une référence. Il est par ailleurs l’auteur de nombreux ouvrages (Profitez-en, l’art est encore en vente libre ; Le musée le plus cher du monde ; L’art, c’est la vie…). Maître Pierre Cornette de Saint-Cyr a ouvert sa maison des ventes avec deux de ses fils en 1973. Il a depuis toujours nourri une passion pour l’Art, en commençant très jeune à collectionner les dessins anciens (son premier étant même une « sanguine »…), avant de s’intéresser aux photographies.</p>
+                        <p>Président d’honneur bénévole du Palais de Tokyo, dédié à la création contemporaine, Maître Pierre Cornette de Saint-Cyr est sans doute le commissaire priseur le plus connu de France et se bat avec ardeur pour l’art contemporain français, au point d’en être devenu une référence. Il est par ailleurs l’auteur de nombreux ouvrages (Profitez-en, l’art est encore en vente libre ; Le musée le plus cher du monde ; L’art, c’est la vie…). Maître Pierre Cornette de Saint-Cyr a ouvert sa maison des ventes avec deux de ses fils en 1973. Il a depuis toujours nourri une passion pour l’Art, en commençant très jeune à collectionner les dessins anciens (son premier étant même une « sanguine »…), avant de s’intéresser aux photographies.</p>
                         <a href="http://cornettedesaintcyr.fr/" target="_blank"><em><strong>Maître Pierre Cornette de Saint-Cyr,</strong> commissaire-priseur de la vente</em></a>
                     </div>
                     <div class="col-md-4">
@@ -369,10 +369,10 @@
 
         <footer>
             <div class="social-links">
-                <a href="http://facebook.com"><i class="fa fa-facebook-official fa-3x"></i></a>
-                <a href="http://instagram.com"><i class="fa fa-instagram fa-3x"></i></a>
-                <a href="http://twitter.com"><i class="fa fa-twitter fa-3x"></i></a>
-                <a href="http://snapchat.com"><i class="fa fa-snapchat fa-3x"></i></a>
+                <a href="http://facebook.com/venteausangcher"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href="http://instagram.com/vente_au_sang_cher"><i class="fa fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com/venteausangcher"><i class="fa fa-twitter fa-3x"></i></a>
+                <a href="http://www.snapchat.com/add/venteausangcher"><i class="fa fa-snapchat fa-3x"></i></a>
             </div>
             <p>&copy; 2016 Philippe Gigleux</p>
         </footer>
