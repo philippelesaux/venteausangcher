@@ -1,8 +1,7 @@
 <?php
     include('php/contact.php');
-
-    $siteKeyTest = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
-    $siteKeyReal = "6LdKABsTAAAAAIZWqk_RxLhpqeTuuUzDevEPkDEM";
+    include('globals.php');
+    
     $siteKey = $siteKeyTest;
 ?>
 <!DOCTYPE html>
@@ -50,14 +49,14 @@
                     </div>
                 </div>
             </nav>
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active" id="home-jumbo">
                         <div class="jumbotron">
                             <div class="container">
                                 <h1 class="script-font">Vente au Sang Cher</h1>
                                 <h2>Vente aux enchères caritative</h2>
-                                <p class="location">Paris</p>
+                                <h3 class="emdash">Paris</h3>
                                 <h2><time datetime="2016-06-14">14 juin 2016</time></h2>
                             </div>
                         </div>
@@ -65,23 +64,24 @@
                     <div class="item" id="donnez-jumbo">
                         <div class="jumbotron">
                             <div class="container">
-                                <img src="img/drop.svg" alt="Offrez votre œuvre pour une bonne cause !" />
-                                <div class="head-text">
-                                    <h1>FAITES UNE B.A.rt</h1>
-                                    <p>Révélez votre talent et votre générosité.</p>
-                                    <p>Rendez-vous avant le</p>
-                                    <p><time datetime="2016-05-20">20 mai 2016</time></p>
-                                </div>
+                                <h1 class="script-font">Faites une B.A.rt</h1>
+                                <p>Révélez votre talent et votre générosité.</p>
+                                <h2>Offrez votre œuvre pour une bonne cause !</h2>
+                                <p>Elle sera exposée et vendue au profit de la recherche.</p>
+                                <p class="emdash">Avant le <time datetime="2016-05-20">20 mai 2016</time></p>
+                                <a href="http://goo.gl/forms/f4ZpKaehmK">
+                                    <img src="img/drop.svg" alt="Je donne !" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -99,23 +99,23 @@
                             <div class="image laurette"></div>
                         </a>
                         <p>Depuis 2002, l’association Laurette Fugain est un  acteur incontournable de la recherche médicale sur la leucémie et les maladies du sang. En 13 ans, l’association a affecté 5,8 millions € à 126 projets de recherche. L’association se bat pour donner aux chercheurs les moyens financiers de progresser dans leurs recherches dans le but de guérir les malades. Elle cherche à lever des fonds pour financer ses projets et fait preuve d’exigence quant à leur sélection à travers un conseil scientifique et médical. Leur démarche offre de précieuses garanties aux donateurs : chaque euro collecté est utilisé de façon pertinente dans un projet médical.</p>
-                        <a href="http://www.laurettefugain.org/" target="_blank"><em><strong>Association Laurette Fugain</strong> pour la recherche médicale sur la leucémie et le sang, bénéficiaire de la vente</em></a>
+                        <p><a href="http://www.laurettefugain.org/" target="_blank"><em><strong>Association Laurette Fugain</strong> pour la recherche médicale sur la leucémie et le sang, bénéficiaire de la vente</em></a></p>
                         <p>« Adressons cette solidarité aux familles qui sont dans la souffrance d’un combat quotidien pour la vie et qui, avec dignité et courage, ne baissent pas les bras… Ils comptent sur nous, sur notre soutien moral, sur nos dons de vie, sur l’aide financière que nous pouvons apporter aux chercheurs pour faire avancer la recherche médicale, … en un mot sur notre solidarité. »</p>
-                        <a href="http://www.laurettefugain.org/" target="_blank"><em><strong>Stéphanie Fugain</strong>, Présidente de l’Association Laurette Fugain</em></a>
+                        <p><a href="http://www.laurettefugain.org/" target="_blank"><em><strong>Stéphanie Fugain</strong>, Présidente de l’Association Laurette Fugain</em></a></p>
                     </div>
                     <div class="col-md-4">
                         <a href="http://cornettedesaintcyr.fr/" target="_blank">
                             <div class="image pierre"></div>
                         </a>
                         <p>Président d’honneur bénévole du Palais de Tokyo, dédié à la création contemporaine, Maître Pierre Cornette de Saint-Cyr est sans doute le commissaire priseur le plus connu de France et se bat avec ardeur pour l’art contemporain français, au point d’en être devenu une référence. Il est par ailleurs l’auteur de nombreux ouvrages (Profitez-en, l’art est encore en vente libre ; Le musée le plus cher du monde ; L’art, c’est la vie…). Maître Pierre Cornette de Saint-Cyr a ouvert sa maison des ventes avec deux de ses fils en 1973. Il a depuis toujours nourri une passion pour l’Art, en commençant très jeune à collectionner les dessins anciens (son premier étant même une « sanguine »…), avant de s’intéresser aux photographies.</p>
-                        <a href="http://cornettedesaintcyr.fr/" target="_blank"><em><strong>Maître Pierre Cornette de Saint-Cyr,</strong> commissaire-priseur de la vente</em></a>
+                        <p><a href="http://cornettedesaintcyr.fr/" target="_blank"><em><strong>Maître Pierre Cornette de Saint-Cyr,</strong> commissaire-priseur de la vente</em></a></p>
                     </div>
                     <div class="col-md-4">
                         <a href="https://www.linkedin.com/in/philippe-gigleux-912279a8" target="_blank">
                             <div class="image philippe"></div>
                         </a>
                         <p>Philippe a toujours été nourri d’une passion pour les arts en général. Piano, théâtre, écriture, peinture, il les a pratiqués autant qu’il a pu et avec toujours un plaisir immense. Au-delà de cet apprentissage personnel, il a appris à apprécier les productions des autres et réserver un grand respect aux artistes et à leurs œuvres. Etudiant en troisième année à Sciences Po Rennes, il poursuit en parallèle une Licence de Droit à l’Université Paris 1 Panthéon-Sorbonne, et aimerait avant tout utiliser cette passion et ses compétences dans un projet utile. C’est ainsi qu’il a  eu l’idée en 2015 de réaliser une vente aux enchères d’art moderne et contemporain au profit de cette belle association, qui en a besoin. « L’Art, c’est la Vie ! » a écrit Maître Cornette de Saint-Cyr. Quel beau résumé de la sienne !</p>
-                        <a href="https://www.linkedin.com/in/philippe-gigleux-912279a8" target="_blank"><em><strong>Philippe Gigleux</strong>, organisateur de la vente</em></a>
+                        <p><a href="https://www.linkedin.com/in/philippe-gigleux-912279a8" target="_blank"><em><strong>Philippe Gigleux</strong>, organisateur de la vente</em></a></p>
                     </div>
                 </div>
             </section>
@@ -129,17 +129,12 @@
                         <p class="col-sm-6 center-text"><em>Vous souhaitez faire une bonne action?</em></p>
                     </div>
                 </div>
-                <div class="pad-vertical clearfix">
-                    <h3>Donnez votre œuvre pour la bonne cause !</h3>
-                    <div id="donnez-drop">
-                        <img src="img/drop.svg" alt="Offrez votre œuvre pour une bonne cause !" />
-                        <div class="head-text">
-                            <h1>FAITES UNE B.A.rt</h1>
-                            <p>Révélez votre talent et votre générosité.</p>
-                            <p>Rendez-vous avant le</p>
-                            <p><time datetime="2016-05-20">20 mai 2016</time></p>
-                        </div>
-                    </div>
+                <div id="donnez-drop" class="pad-vertical clearfix">
+                    <h1>Faites une B.A.rt</h1>
+                    <p>Révélez votre talent et votre générosité.</p>
+                    <h2>Offrez votre œuvre pour une bonne cause !</h2>
+                    <p>Elle sera exposée et vendue au profit de la recherche.</p>
+                    <p class="emdash">Avant le <time datetime="2016-05-20">20 mai 2016</time></p>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 col-md-offset-2 col-md-4">
@@ -369,10 +364,10 @@
 
         <footer>
             <div class="social-links">
-                <a href="http://facebook.com/venteausangcher"><i class="fa fa-facebook-official fa-3x"></i></a>
-                <a href="http://instagram.com/vente_au_sang_cher"><i class="fa fa-instagram fa-3x"></i></a>
-                <a href="https://twitter.com/venteausangcher"><i class="fa fa-twitter fa-3x"></i></a>
-                <a href="http://www.snapchat.com/add/venteausangcher"><i class="fa fa-snapchat fa-3x"></i></a>
+                <a href="http://facebook.com/venteausangcher" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href="http://instagram.com/vente_au_sang_cher" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+                <a href="https://twitter.com/venteausangcher" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                <a href="http://www.snapchat.com/add/venteausangcher" target="_blank"><i class="fa fa-snapchat fa-3x"></i></a>
             </div>
             <p>&copy; 2016 Philippe Gigleux</p>
         </footer>

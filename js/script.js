@@ -16,6 +16,7 @@ $(function() {
         });
     });
 
+    // shows the success/fail div
     $('#form').parsley().on('field:validated', function() {
         var ok = $('.parsley-error').length === 0;
         $('.bs-callout-info').toggleClass('hidden', !ok);

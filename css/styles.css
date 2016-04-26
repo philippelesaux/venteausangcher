@@ -5,13 +5,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Julius Sans One", sans-serif;
   color: #9E0000; }
 
-p, div {
+p, li {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   line-height: 1.5em;
   color: #555; }
 
 p {
+  font-size: 1.14285714em;
+  /* 16px / 14px*/
   text-align: justify; }
 
 section {
@@ -36,11 +37,6 @@ a {
     color: #9E0000;
     text-decoration: none;
     border-bottom: 1px solid #9E0000; }
-
-time {
-  color: white;
-  letter-spacing: 0.1em;
-  font-size: 1.25em; }
 
 form {
   margin-top: 2em; }
@@ -69,8 +65,7 @@ a.split {
     font-family: "Julius Sans One", sans-serif;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 14px; }
+    letter-spacing: 0.1em; }
     .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
       background-color: white;
       color: #9E0000; }
@@ -107,65 +102,56 @@ a.split {
   color: white;
   padding: 5em 0 7em; }
   .jumbotron h1 {
-    color: white; }
+    color: white;
+    font-size: 10vh; }
+    @media screen and (min-width: 425px) {
+      .jumbotron h1 {
+        font-size: 15vh; } }
+  .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6, .jumbotron p {
+    color: #ff9191; }
   .jumbotron h2 {
-    color: #ff9191; }
+    font-size: 4vh; }
+  .jumbotron h3 {
+    font-size: 3vh; }
   .jumbotron p {
-    font-family: "Julius Sans One", sans-serif;
-    color: #ff9191; }
-
-#home-jumbo .jumbotron {
-  text-align: center; }
-  #home-jumbo .jumbotron h1.script-font {
-    font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif;
-    font-size: 6em; }
-    @media screen and (max-width: 320px) {
-      #home-jumbo .jumbotron h1.script-font {
-        font-size: 5em; } }
-  #home-jumbo .jumbotron p {
+    font-size: 2.5vh; }
+    @media screen and (min-height: 425px) {
+      .jumbotron p {
+        font-size: 3vh; } }
+  .jumbotron * {
     text-align: center; }
-  #home-jumbo .jumbotron time {
-    display: inline-block;
-    padding: 0.5em;
-    border: 2px solid white; }
+
+#home-jumbo .jumbotron time {
+  color: white;
+  display: inline-block;
+  padding: 0.5em;
+  border: 2px solid white;
+  letter-spacing: 0.1em; }
 
 #donnez-jumbo .jumbotron img, #donnez-drop img {
-  float: right;
-  max-height: 60vh;
-  max-width: 50%; }
+  height: 25vh; }
   @media screen and (max-width: 768px) {
     #donnez-jumbo .jumbotron img, #donnez-drop img {
-      float: none;
-      display: block;
-      padding-bottom: 2em; } }
-  #donnez-jumbo .jumbotron img time, #donnez-drop img time {
-    display: block; }
-#donnez-jumbo .jumbotron .head-text, #donnez-drop .head-text {
-  width: 50%;
-  padding: 5% 10%; }
-  @media screen and (max-width: 768px) {
-    #donnez-jumbo .jumbotron .head-text, #donnez-drop .head-text {
-      padding: 0; } }
-  #donnez-jumbo .jumbotron .head-text p, #donnez-drop .head-text p {
-    text-align: left; }
+      height: 25vh; } }
 
-@media screen and (max-width: 768px) {
-  #donnez-jumbo .jumbotron .container * {
-    margin: 0 auto; } }
+#donnez-jumbo .jumbotron h2 {
+  color: white; }
 
+#donnez-drop * {
+  text-align: center; }
 #donnez-drop time {
   color: #9E0000; }
-@media screen and (max-width: 768px) {
-  #donnez-drop * {
-    margin: 0 auto; } }
 
 .carousel-control.right, .carousel-control.left {
   background-image: none; }
 
-.location::before {
+.emdash::before {
   content: "\2014\00a0"; }
-.location::after {
+.emdash::after {
   content: "\00a0\2014"; }
+
+.script-font {
+  font-family: "Edwardian Script ITC", "Julius Sans One", Times, serif; }
 
 .image {
   float: left;
